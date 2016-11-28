@@ -50,16 +50,16 @@ public class MazeApplication {
         //java -jar Maze-1.0-SNAPSHOT.jar -classpath "." com.doughuang168.maze.MazeApplication.class
         //java -jar Maze-1.0-SNAPSHOT.jar -classpath "." com.doughuang168.maze.MazeApplication.class maze.json => args.length == 4
         if (args.length == 4) {
-            mazePath = args[3]; //"C:\\src\\Github\\maze-solver-dfs-bfs\\maze.json"; //args[3];
+            mazePath = args[3];//"C:\\src\\Github\\maze-solver-dfs-bfs\\maze3.json"; //args[3];
             try {
                 mazeData = mapper.readValue(new File(mazePath), MazeData.class);
                 mazeAryData = mazeData.getMazeArray();
                 for (int i=0; i<mazeData.size(); i++) {
                     for (int j=0; j<mazeData.size(); j++) {
-                        if (maze[i][j] == 's') {
+                        if (mazeAryData[i][j] == 's') {
                             startI = i;
                             startJ = j;
-                        } else  if (maze[i][j] == 'e') {
+                        } else  if (mazeAryData[i][j] == 'e') {
                             endI = i;
                             endJ = j;
                         }
