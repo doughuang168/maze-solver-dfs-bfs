@@ -8,7 +8,7 @@ import java.util.*;
 public class Maze {
 
 
-    final static char C = ' ', X = 'x', S = 's', E = 'e', V = '.';
+    final static char C = ' ', X = 'x', S = 's', E = 'e';
     //General perfect maze properties
     private int START_I, START_J;
     private int END_I, END_J;
@@ -57,17 +57,17 @@ public class Maze {
     }
     public boolean isClear(int i, int j) {
         assert(isInMaze(i,j));
-        return (maze[i][j] != X && maze[i][j] != V);
+        return (maze[i][j] != X);
     }
     public boolean isClear(Juncture pos) {
         return isClear(pos.i(), pos.j());
     }
-    //true if cell is within maze
+    //true if Juncture is within maze
     public boolean isInMaze(int i, int j) {
         if (i >= 0 && i<size() && j>= 0 && j<size()) return true;
         else return false;
     }
-    //true if cell is within maze
+    //true if Juncture is within maze
     public boolean isInMaze(Juncture pos) {
         return isInMaze(pos.i(), pos.j());
     }
