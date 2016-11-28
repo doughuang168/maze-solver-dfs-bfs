@@ -12,8 +12,6 @@ Download complete source thru Github:
 
 - In command windows type "./gradlew build" in Linux environment or ".\gradlew.bat build" in windows environment. In Linux make sure gradlew is exechtable or "chmod +x gradlew"
 
-- In command windows type "./gradlew build" in Linux environment or ".\gradlew.bat build" in windows environment. In Linux make sure gradlew is exechtable or "chmod +x gradlew"
-
 
 - In command windows type "cp build/distributions/Maze-1.0-SNAPSHOT.zip targetDir" in Linux environment or "copy build\distributions\Maze-1.0-SNAPSHOT.zip targetDir" in windows environment.  targetDir is the folder hold built artifact.
 
@@ -30,7 +28,7 @@ Download complete source thru Github:
 - java -jar Maze-1.0-SNAPSHOT.jar -classpath "."  com.doughuang168.maze.MazeApplication.class
 
 
-- java -jar Maze-1.0-SNAPSHOT.jar -classpath "."  com.doughuang168.maze.MazeApplication.class maze.json
+- java -jar Maze-1.0-SNAPSHOT.jar -classpath "."  com.doughuang168.maze.MazeApplication.class path/to/maze.json
  
  
  
