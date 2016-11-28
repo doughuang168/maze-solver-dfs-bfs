@@ -13,18 +13,10 @@ public class MazeData {
         List<String> mazeRow;
         public List<String> getMazeRow() {return mazeRow;}
     }
-    private Integer startI;
-    private Integer startJ;
-    private Integer endI;
-    private Integer endJ;
 
     List<Row> maze;
 
-    public Integer getStartI() {return startI;};
-    public Integer getStartJ() {return startJ;};
-    public Integer getEndI() {return startI;};
-    public Integer getEndJ() {return startI;};
-    public List<Row> getMaze() {return maze;};
+    public List<Row> getMaze() {return maze;}
     public Integer size() { return maze.size();}
     public char[][] getMazeArray() {
         char[][] mazeArray=new char[size()][size()];
