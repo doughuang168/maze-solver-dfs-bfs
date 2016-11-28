@@ -9,7 +9,6 @@ public class Vertex {
     int i, j;
     List<Vertex> acencyVertices;
     boolean markAsVisited;
-    //boolean markAsSeen;
     Vertex predecessor;
 
     public Vertex(int i, int j) {
@@ -48,14 +47,11 @@ public class Vertex {
     public List<Vertex> getAdjacencies() {
         return acencyVertices;
     }
-//
-//    public void markAsSeen() {
-//        this.markAsSeen = true;
-//    }
+
 
     public boolean beenVisited() {
         return markAsVisited == true;
     }
 
-    //public void setPredecessor(Vertex p)
+
 }
