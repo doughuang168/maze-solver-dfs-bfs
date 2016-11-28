@@ -36,7 +36,7 @@ Download complete source thru Github:
 
 
 
--  maze.json allow user supply NxN perfect maze use JSON representation. A maze is classified as ‘perfect’ if it does not contain loops.
+-  maze.json allow user supply 2D NxN perfect maze use JSON representation. A maze is classified as ‘perfect’ if it does not contain loops. x: wall, s: start juncture, e: finish juncture, ' ': open.
  
 ## Maze JSON format
 
