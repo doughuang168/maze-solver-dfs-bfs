@@ -30,10 +30,34 @@ Download complete source thru Github:
 
 - java -jar Maze-1.0-SNAPSHOT.jar -classpath "."  com.doughuang168.maze.MazeApplication.class path/to/maze.json
  
- 
- 
 
 
 - Java 8 and gradle are required for build and run
 
 
+
+-  maze.json allow user supply NxN perfect maze use JSON representation. A maze is classified as ‘perfect’ if it does not contain loops.
+ 
+## Maze JSON format
+
+{
+
+	"maze": [ 
+				{"mazeRow":[ "x", "x", "s", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"]},
+                {"mazeRow":[ "x", " ", " ", "x", " ", "x", " ", "x", " ", " ", " ", " ", " ", " ", " ", "x"]},
+                {"mazeRow":[ "x", " ", " ", "x", " ", "x", " ", " ", " ", "x", " ", " ", " ", "x", " ", "x"]},
+                {"mazeRow":[ "x", " ", "x", "x", " ", "x", " ", "x", "x", "x", "x", "x", " ", "x", " ", "x"]},
+                {"mazeRow":[ "x", " ", " ", " ", " ", "x", " ", " ", " ", "x", " ", "x", " ", "x", " ", "x"]},
+                {"mazeRow":[ "x", " ", "x", "x", "x", "x", "x", " ", "x", "x", " ", "x", "x", "x", " ", "x"]},
+                {"mazeRow":[ "x", " ", " ", " ", " ", " ", " ", " ", "x", " ", " ", "x", " ", " ", " ", "x"]},
+                {"mazeRow":[ "x", "x", "x", " ", "x", "x", "x", "x", "x", " ", "x", "x", "x", "x", "x", "x"]},
+                {"mazeRow":[ "x", " ", " ", " ", " ", "x", " ", " ", " ", " ", "x", " ", "x", " ", " ", "x"]},
+                {"mazeRow":[ "x", " ", "x", "x", "x", "x", " ", "x", " ", " ", "x", " ", " ", " ", " ", "x"]},
+                {"mazeRow":[ "x", " ", " ", " ", " ", "x", " ", "x", " ", "x", "x", " ", "x", "x", "x", "x"]},
+                {"mazeRow":[ "x", " ", "x", " ", " ", " ", " ", "x", " ", " ", " ", " ", " ", " ", " ", "x"]},
+                {"mazeRow":[ "x", " ", "x", "x", "x", "x", " ", "x", " ", " ", "x", "x", "x", "x", " ", "x"]},
+                {"mazeRow":[ "x", " ", "x", " ", " ", " ", " ", " ", " ", "x", "x", " ", " ", "x", " ", "x"]},
+                {"mazeRow":[ "x", " ", "x", " ", "x", "x", "x", " ", " ", " ", " ", " ", " ", "x", " ", "x"]},
+                {"mazeRow":[ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "e", "x", "x", "x"]}
+			]
+}			
