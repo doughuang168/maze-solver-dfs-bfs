@@ -43,8 +43,10 @@ public class MazeApplication {
         MazeData mazeData = null;
         char[][] mazeAryData = null;
         //mapper = new ObjectMapper();
-        if (args.length == 1) {
-            mazePath = args[0];
+        //java -jar Maze-1.0-SNAPSHOT.jar -classpath "." com.doughuang168.maze.MazeApplication.class
+        //java -jar Maze-1.0-SNAPSHOT.jar -classpath "." com.doughuang168.maze.MazeApplication.class maze.json => args.length == 4
+        if (args.length == 4) {
+            mazePath = args[3];
             try {
                 mazeData = mapper.readValue(new File(mazePath), MazeData.class);
                 mazeAryData = mazeData.getMazeArray();
