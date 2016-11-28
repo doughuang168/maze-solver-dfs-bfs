@@ -10,10 +10,30 @@ Download complete source thru Github:
 - cd maze-solver-dfs-bfs
 
 
-- In command windows type "./gradlew build" in Linux environment or ".\gradlew.bat build" in windows environment
+- In command windows type "./gradlew build" in Linux environment or ".\gradlew.bat build" in windows environment. In Linux make sure gradlew is exechtable or "chmod +x gradlew"
+
+- In command windows type "./gradlew build" in Linux environment or ".\gradlew.bat build" in windows environment. In Linux make sure gradlew is exechtable or "chmod +x gradlew"
 
 
-- "java -jar build\libs\Maze-1.0-SNAPSHOT.jar" to start Maze solver demo program
+- In command windows type "cp build/distributions/Maze-1.0-SNAPSHOT.zip targetDir" in Linux environment or "copy build\distributions\Maze-1.0-SNAPSHOT.zip targetDir" in windows environment.  targetDir is the folder hold built artifact.
+
+
+- cd targetDir
+
+
+- In command windows type "unzip Maze-1.0-SNAPSHOT.zip" or "tar xvf Maze-1.0-SNAPSHOT.tar"
+
+- cd Maze-1.0-SNAPSHOT
+
+- "cp lib/*.jar ." or "copy lib\\*.jar ."
+
+- java -jar Maze-1.0-SNAPSHOT.jar -classpath "."  com.doughuang168.maze.MazeApplication.class
+
+
+- java -jar Maze-1.0-SNAPSHOT.jar -classpath "."  com.doughuang168.maze.MazeApplication.class maze.json
+ 
+ 
+ 
 
 
 - Java 8 and gradle are required for build and run
