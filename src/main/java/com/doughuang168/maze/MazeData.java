@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.ArrayList;
 import java.util.List;
 
+//Use @JsonIgnoreProperties Annotation to avoid error: Jackson2 Unrecognized field  not marked as ignorable
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MazeData {
 
