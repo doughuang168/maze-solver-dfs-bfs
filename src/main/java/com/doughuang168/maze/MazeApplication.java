@@ -39,9 +39,7 @@ public class MazeApplication {
 
 
         String mazePath = "";
-
         ObjectMapper mapper = new ObjectMapper();
-        ;
         MazeData mazeData = null;
         char[][] mazeAryData = null;
         //mapper = new ObjectMapper();
@@ -67,8 +65,10 @@ public class MazeApplication {
 
         //MazeGraph initialization
         if (mazePath == "") {//use built in default maze
+            System.out.println("Use build-in maze");
             mazeGraph = new MazeGraph( maze, startI, startJ, endI, endJ);
         } else {
+            System.out.println("Use user supply maze: "+mazePath);
             mazeGraph = new MazeGraph( mazeAryData, mazeData.getStartI(), mazeData.getStartJ(), mazeData.getEndI(), mazeData.getEndJ());
         }
 
